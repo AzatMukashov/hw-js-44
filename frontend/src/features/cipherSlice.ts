@@ -32,3 +32,6 @@ const cipherSlice = createSlice({
     },
   },
 });
+
+export const {setPassword, setInputMessage, setOutputMessage, setError} = cipherSlice.actions;
+export default cipherSlice.reducer;
