@@ -1,3 +1,4 @@
+import { createSlice } from '@reduxjs/toolkit';
 
 interface CipherState {
   password: string;
@@ -12,3 +13,11 @@ const initialState: CipherState = {
   outputMessage: '',
   error: null,
 };
+
+const cipherSlice = createSlice({
+  name: 'cipher',
+  initialState,
+  reducers: {
+
+  }
+})
